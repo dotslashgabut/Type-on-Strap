@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: ""
+baseurl: "/test"
 url: "https://dotslashgabut.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
