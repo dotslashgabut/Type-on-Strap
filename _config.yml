@@ -4,7 +4,7 @@ url: "https://dotslashgabut.com"
 
 # THEME-SPECIFIC CONFIGURATION
 title: DotSlashGabut                                    # site's title
-description: "i have no idea with this ./gabut"         # used by search engines
+description: "i have no idea about ./gabut"         # used by search engines
 avatar: assets/img/dotslashgabut.png                    # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
