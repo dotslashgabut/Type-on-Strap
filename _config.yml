@@ -12,7 +12,7 @@ favicon: assets/favicon.ico                             # Icon displayed in the 
 header_text: <code>./gabut - <em>finding keyboard shorcuts</em></code>  # Change Blog header text
 header_feature_image: assets/img/pexels/dotslashgabut.jpg
 footer_text: >
-  <a href="#top-site">DotSlashGabut</a> | Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+  <a href="#gabut">DotSlashGabut</a> | Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
