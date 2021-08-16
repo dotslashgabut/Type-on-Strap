@@ -1,40 +1,16 @@
-# Icons on the footer
-rss: true
-email_address:                # Full email address, e.g. "sam@example.com"
-behance:
-bitbucket:
-dribbble:
-facebook: "dotslashgabut"
-flickr:
-gitlab:
-github: "dotslashgabut"
-instagram: "dotslashgabut"
-keybase:
-linkedin:         # Full URL
-pinterest:
-reddit:
-soundcloud:
-stack_overflow:
-stack_exchange:   # Full URL
-steam:
-tumblr:
-twitter: "dotslashgabut"         # "twitter username"
-vimeo:
-wordpress:
-youtube: UCzf4C3wS_7BkCFmT_Izxywg         # Youtube channel token like: UCqECaJ8Gagnn7YCbPEzWH6g
-
-# rss specify feed path
+# RSS specific
+rss: true         # Icons on the footer
 feed:
-  path: feed.xml
+  path: feed.xml  # RSS feed path
 
 # Share button options
 share:
-  facebook: true
-  twitter: true
-  tumblr:
-  pinterest:
-  pocket: true
-  reddit: true
-  linkedin:
-  wordpress:
   email: true
+  facebook: true
+  linkedin: true
+  pinterest: true
+  pocket:
+  reddit: true
+  tumblr: true
+  twitter: true
+  wordpress:
