@@ -10,7 +10,7 @@ favicon: assets/favicon.ico                             # Icon displayed in the 
 
 # Header and footer text
 header_text: <code>./gabut - <em>little bit customization</em></code>  # Change Blog header text
-header_feature_image: assets/img/pexels/dotslashgabut.jpg
+header_feature_image: assets/img/pexels/dotslashgabut.png
 footer_text: >
   <a href="#gabut">DotSlashGabut <i class="fas fa-arrow-up"></i></a> Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
