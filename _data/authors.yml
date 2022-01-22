@@ -1,7 +1,3 @@
-dotslashgabut: # author-id
-  name: "DotSlashGabut"
-  avatar: "https://avatars2.githubusercontent.com/u/80040078?s=64&v=4"
-  url: "https://github.com/dotslashgabut"
 rohanchandra: # author-id
   name: "Rohan Chandra"
   avatar: "https://avatars2.githubusercontent.com/u/816965?s=64&v=4"
@@ -22,3 +18,7 @@ unknown:
   name: Unknown
   avatar:
   url:
+dotslashgabut:
+  name: "DotSlashGabut"
+  avatar: "https://avatars2.githubusercontent.com/u/80040078?s=64&v=4"
+  url: "https://github.com/dotslashgabut"

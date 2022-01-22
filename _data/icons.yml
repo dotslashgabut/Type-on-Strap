@@ -1,14 +1,15 @@
-# Icons on the footer
+# For the Icons on the footer of the website
+# For the Share buttons at the end of the articles, use the "social.yml"
 behance:
 bitbucket:
 calendly:
 dribbble:
 facebook: dotslashgabut
 flickr:
-github:  dotslashgabut
+github: dotslashgabut
 gitlab:
 google-scholar:   # e.g. "WXAAOb0AAAAJ"
-instagram:  dotslashgabut
+instagram: dotslashgabut
 hacker-news:
 keybase:
 linkedin:
@@ -33,4 +34,4 @@ twitter: dotslashgabut
 vimeo:
 vk:
 wordpress:
-youtube: UCzf4C3wS_7BkCFmT_Izxywg         # e.g. "UCqECaJ8Gagnn7YCbPEzWH6g"
+youtube: UCzf4C3wS_7BkCFmT_Izxywg          # e.g. "UCqECaJ8Gagnn7YCbPEzWH6g"
