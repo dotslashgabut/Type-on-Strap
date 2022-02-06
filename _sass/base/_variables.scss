@@ -32,11 +32,11 @@ html, html[data-theme="light"] {
   --background: #ffffff;
   --blockquote: #eef7fa;
   --selection: #d4d4d4;
-  --meta: #656c7a;
+  --meta: #383838;
   --link: #515866;
   --header-background: #24292e;
   --header-text: #ffffff;
-  --header-link: #515866;
+  --header-link: #383838;
   --code-background: #E0E0E0;
   --code-inline: #24292e;
   --text-shadow: #3f3f3f;
@@ -51,7 +51,7 @@ html, html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-  --background: #22272e; // brand, background
+  --background: #181818; // brand, background
   --blockquote: #373e47; // blockquote
   --selection: #545d68; // selection
   --meta: #909dab; // meta
