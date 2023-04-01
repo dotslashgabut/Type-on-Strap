@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hexadecimal RGB Color Code Extractor Based on Pixel Coordinates without hashtag (FFFFFF)</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #333;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  input[type="text"] {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 30rem;
+  }
+
+  input[type="button"] {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  input[type="button"]:hover {
+    background-color: #3e8e41;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+    max-width: 60rem;
+  }
+
+  th,
+  td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    font-size: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #4CAF50;
+  }
+
+  a:hover {
+    color: #3e8e41;
+  }
+</style>
+  </head>
+  <body>
+    <h1>Pixel Coordinates to RGB Color Code</h1>
+    <p>style-2 (FFFFFF)</p>
+    <table>
+      <tr>
+        <th>Image URL</th>
+        <td><input type="text" id="image-url"></td>
+      </tr>
+      <tr>
+        <th>Pixel Coordinates</th>
+        <td><input type="text" id="pixel-coordinates"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="button" value="Get Color Code" onclick="getColorCode()"></td>
+      </tr>
+      <tr>
+        <th>Hexadecimal Color Code</th>
+        <td id="color-code"></td>
+      </tr>
+    </table>
+    <p>Input pixel coordinates (x:y) sparated by comma, like this > 12:0,511:48</p>
+    <h4><a href="https://dotslashgabut.github.io/testcode/">Home</a></h4>
+    <script>
+      function getColorCode() {
+        var imageUrl = document.getElementById("image-url").value;
+        var pixelCoordinates = document.getElementById("pixel-coordinates").value;
+        var canvas = document.createElement("canvas");
+        var img = new Image();
+        img.crossOrigin = "Anonymous";
+        img.onload = function() {
+          canvas.width = img.width;
+          canvas.height = img.height;
+          var context = canvas.getContext("2d");
+          context.drawImage(img, 0, 0);
+          var coordinates = pixelCoordinates.split(",");
+          var colorCodes = [];
+          for (var i = 0; i < coordinates.length; i++) {
+            var x = parseInt(coordinates[i].split(":")[0]);
+            var y = parseInt(coordinates[i].split(":")[1]);
+            var pixel = context.getImageData(x, y, 1, 1);
+            var colorCode = rgbToHex(pixel.data[0], pixel.data[1], pixel.data[2]);
+            colorCodes.push(colorCode);
+          }
+          document.getElementById("color-code").innerHTML = colorCodes.join(" ");
+        };
+        img.src = imageUrl;
+      }
+      
+      function rgbToHex(r, g, b) {
+        var hex = ((r << 16) | (g << 8) | b).toString(16);
+        return hex.padStart(6, "0").toUpperCase();
+      }
+    </script>
+  </body>
+</html>
